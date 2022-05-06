@@ -1,0 +1,65 @@
+[
+    {
+        "codigo": 1,
+        "producto": "Card title 1",
+        "img": "../img/img_perro1.jpg",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", 
+        "precio": "$2.500"
+    }
+    ,
+    {
+        "codigo": 2,
+        "producto": "Card title 2",
+        "img": "../img/img_perro2.jpg",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", 
+        "precio": "$4.100"
+    }
+    ,
+    {
+        "codigo": 3,
+        "producto": "Card title 3",
+        "img": "../img/img_perro3.jpeg",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", 
+        "precio": "$5.500"
+    }
+    ,
+    {
+        "codigo": 4,
+        "producto": "Card title 4",
+        "img": "../img/img_perro4.jpg",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", 
+        "precio": "$8.990"
+    }
+    ,
+    {
+        "codigo": 5,
+        "producto": "Card title 5",
+        "img": "../img/img_perro5.jpg",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", 
+        "precio": "$3.890"
+    }
+    ,
+    {
+        "codigo": 6,
+        "producto": "Card title 6",
+        "img": "../img/img_perro6.jpeg",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", 
+        "precio": "$2.150"
+    }
+    ,{
+        "codigo": 7,
+        "producto": "Card title 7",
+        "img": "../img/img_perro7.jpg",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", 
+        "precio": "$11.500"
+    }
+    ,
+    {
+        "codigo": 8,
+        "producto": "Card title 8",
+        "img": "../img/img_perro8.jpg",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.", 
+        "precio": "$10.990"
+    }
+
+]
