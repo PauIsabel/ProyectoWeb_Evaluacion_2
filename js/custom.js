@@ -2,6 +2,10 @@
 /**VARIABLE que leer todos los productos */
 let allContainerCards = document.querySelector('.productos')
 
+/**Para el MODAL del CARRITO */
+let buyProducts = []
+
+
 /**Funcion - . AGrupa todos los listener */
 //Primero se llama la FUNCION y despues se CREA -> Para que se ejecute
 loadEventListener();
@@ -14,53 +18,67 @@ function loadEventListener(){
 
 //Crear FUNCION 'addProduct'
 function addProduct(e){
+
+    //Para que al hacer CLICK en la CARD, solo pesque el BOTON
     e.preventDefault();
-    
-    if(e.target.classList.contains('btn-add')){
 
-        //Recupera al contenedor PADRE y su contendido
-        const selectProduct = e.target.parentElement;
+    //SELECCIONAR Y ALMACENAR EL CONTENEDOR PADRE
+    const selectProduct = e.target
+    //console.log(selectProduct)     
+    const product = selectProduct.closest('.card')
+    //console.log(product)
 
-        //Obtener ATRIBUTOS
-        const cardProducto = selectProduct.closest('.card')
+    //SELECCIONAR LOS ATRIBUTOS
+    const nameProduct = product.querySelector('.card-title').textContent;
+    //console.log(nameProduct)
+    const priceProduct = product.querySelector('.precio').textContent;
+    //console.log(priceProduct)
+    const imgProduct = product.querySelector('.card-img-top').src;
+    //console.log(imgProduct)
+    const idProduct = product.querySelector('a').getAttribute('data-id')
+    //console.log(idProduct)
 
-        const imgProducto = cardProducto.querySelector('card-img-top').src
-        const nameProduct = cardProducto.querySelector('.card-title').textContent
-        const priceProduct = cardProducto.querySelector('.precio').textContent
-        const idProduct = cardProducto.querySelector('button').getAttribute('data-id')
-
-        //Crear un OBJETO -> para OBETENER los ATRIBUTOS del producto
-        const infoProduct = {
-            image: imgProducto,
-            title: nameProduct,
-            price: priceProduct,
-            id: idProduct,
-            cantidad: 1
-        } 
-
-        console.log(infoProduct);
-
-        //LLAMA FUNCION que LEE EL CONTENIDO y le pasamos la VARIABLE
-        //readTheContent(selectProduct);
-
+    //Crear OBJETO para PRODUCTO
+    const infoProduct = {
+        id: idProduct,
+        nombre: nameProduct,
+        imagen: imgProduct,
+        precio: priceProduct,
+        cantidad: 1
     }
-        
+
+    //Copia del PRODUCTO dentro del ARRAY -> Para agregar los productos
+    buyProducts = [...buyProducts, infoProduct]
+
+    //Funcion que carga el HTML
+    loadHTML();
+    console.log(infoProduct)
+
 }
 
-//Crear FUNCION 'readTheContent'
-function readTheContent(product){
+//Crear FUNCION 'loadHTML' 
+function loadHTML(){
 
-    // //Crear un OBJETO -> para OBETENER los ATRIBUTOS del producto
-    // const infoProduct = {
-    //     image: product.querySelector('div img').src,
-    //     title: product.querySelector('.card-title').textContent,
-    //     price: product.querySelector('.precio').textContent,
-    //     id: product.querySelector('button').getAttribute('data-id'),
-    //     cantidad: 1
-    // } 
+    //Recorrer el OBJETO
+    buyProducts.forEach(producto => {
 
-    
+        //Recuperar ATRIBUTOS del OBJETO (Se usa DESTRUCTURACION)
+        const {imagen, nombre, precio, cantidad, id} = producto;
 
+        //Crear la estructura HTML del CARD -> Dinamico
+        const row = document.createElement('div')
+        row.classList.add('.item')
+        row.innerHTML = `
+            <img src="${imagen}" alt="">
+            <div class="item-content">
+                <h5>${nombre}</h5>
+                <h5 class="cart-price">${precio}</h5>
+                <h6>Amount: ${cantidad}</h6>
+            </div>
+            <span class="delete-product" data-id="${id}">X</span>
+        `;
+        
+    });
 }
 
 
