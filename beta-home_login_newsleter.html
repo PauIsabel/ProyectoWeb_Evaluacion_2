@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Bootstrap ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- CARGAR ESTILOS CSS-->
+    <link rel="stylesheet" href="css/estilos-login.css">
+    <link rel="stylesheet" href="css/estilos-suscription.css">
+    <link rel="stylesheet" href="css/estilos-login.css">
+    <link rel="stylesheet" href="css/estilos-suscription.css">
+    <link rel="stylesheet" href="css/estilos-jumbotron.css">
+    <link rel="stylesheet" href="css/estilos-formulario.css">
+
+  
+    <!-- TITULO PAGINA -->
+    <title>Home Fundación</title>
+
+  </head>
+
+  <body onload="showSuscriptionModal()">    
+    <header>
+      <div>
+        <!-- INFO TOP SITE -->
+        <div class="container-fluid bg-dark">
+          <div class="container text-center font-weight-bold text-white">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <h3>Fundación Ayuda a un Peludo</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- BARRA NAVEGACION CON TOGGLE -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#"><img src="img/pet_logo.jpg" width="50%"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse font-weight-bold" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item mx-1 active">
+                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link" href="#">NOSOTROS</a>
+              </li>
+
+              <li class="nav-item dropdown mx-1">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  TIENDA-PETS
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">ALIMENTOS</a>
+                  <a class="dropdown-item" href="#">JUGUETES</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">MEDICAMENTOS</a>
+                </div>
+              </li>
+              <li class="nav-item mx-1 my-sm-1">
+                <a href="#"><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="font-weight-bold btn btn-outline-warning my-2 my-sm-0"><img src="img/person-plus-fill.svg">  SUSCRIBETE</button></a>
+              </li>
+
+              <li class="nav-item mx-1 my-sm-1">
+                <a href="#"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="font-weight-bold btn btn-outline-danger my-2 my-sm-0"><img src="img/person-circle.svg">  INGRESAR</button></a>
+
+              <li class="nav-item mx-1 my-sm-1" >
+                <a href="#"></a><button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="img/cart3.svg" alt="">   CARRITO</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled itemCardTotal" href="#">Total en carro: $0</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-0" type="search" placeholder="¿Buscas algo?" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="img/search.svg" alt=""></button>
+            </form>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+    <section class="d-flex justify-content-center justify-content-lg-between py-1 border-bottom bg-dark"></section>
+    
+
+    <!--esto agrega un modal para el registro del login de usuario-->
+     <div id="id01" class="modal">
+      <div class="row d-flex align-items-center justify-content-center" >
+        <div class="col-12 col-sm-8 col-md-6 col-lg-5">
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <!--<form class="modal-content animate" action="/action_page.php" method="post">-->
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="img/person-circle.svg" width="100" height="100" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="container">
+                <label class="mb-0 font-weight-bold" for="ccorreoUsuario">Correo</label>
+                <input id="input_mail_modal" type="email" placeholder="Ingrese su correo" name="correoUsuario" required>
+          
+                <label class="mb-0 font-weight-bold" for="ccorreoUsuario">Contraseña</label>
+                <input id="input_password_modal" type="password" placeholder="Ingrese Contraseña" name="psw" required>
+                  
+                <button id="button_modal1"  class="btn btn-outline-danger" type="submit">Ingresar</button>
+                
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Recuerdame
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn btn-outline-danger">Cancelar</button>
+                <span class="psw">Olvido su <a href="#">contraseña?</a></span>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    <!--esto termina de agrega un modal para el registro del login de usuario-->
+
+
+    <!--MODAL PARA EL NEWLETER Y LA SUSCRIPCION Y REGISTRO-->
+    <div id="id02" class="modal " tabindex="-1">
+      <div class="container-fluid" id="pruebamodal1">
+        <div class="container align-items-center">
+            <div class="row d-flex justify-content-center ">
+                <div class="bg-light p-2 col-12 col-md-5 col-sm-12 col-lg-6">
+                  <img src="img/img-perrogato newsletter.jpg" width="100%" height="100%"/>
+                </div>
+                <div class="bg-light p-4 col-12 col-sm-12 col-md-7 col-lg-6">
+                  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <h2 class="font-weight-bold">¡SUSCRIBETE Y DONA!</h2>
+                  <div class="modal-footer text-justify">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia velit magnam ab aliquam voluptatum repellat corporis animi inventore aliquid. Saepe culpa illum fugit! Ab excepturi dignissimos suscipit commodi veritatis ullam eveniet doloremque quaerat, sit omnis. Itaque asperiores commodi dignissimos nisi.</p>
+                    <h3 class="font-weight-bold">
+                      SI TE SUSCRIBES CON UNA DONACIÓN PARA LA FUNDACIÓN OBTENDRAS UN 5% DE DESCUENTO EN EL TOTAL DE TU COMPRA EN NUESTRA TIENDA
+                    </h3>
+                  </div>
+                  <div class="modal-footer justify-content-center">
+                    <a href="beta-registro formulario.html"><button type="button" class="btn btn-success btn-lg btn-block">Registarte</button></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+
+
+   <!--INICIO DE JUMBOTRON PAGINA HOME-->
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="jumbotron bg-warning">
+          <h1 class="display-5 font-weight-bold">Bienvenidos a nuestra Fundación Sin Fines de Lucro</h1>
+          <h3 class="display-5 font-weight-light">"Ayuda a un Peludo"</h3>
+          <p class="lead">Esta es una pagina de ayudar para animales en peligro tambien tenemos disponible articulos para mascotas y asi poder seguir ayudando a mas animalitos en peligro.</p>
+          <hr class="my-4">
+          <p>Visita nuestra tienda para seguir ayudando animales.</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Leer más</a>
+        </div>
+
+       </div>
+     </div>
+   </div>
+   
+
+   <!--AQUI SE COLOCA EL TEXTO DE LA PAGINA-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      
+
+      
+
+      <!-- Pie de pagina -->
+      <footer class="text-center text-lg-start bg-light text-dark" "text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between py-2 border-bottom bg-dark">
+          <!--Redes sociales al centro del div-->
+          <div class="d-flex justify-content-center align-items-center mx-auto">
+              <!-- Facebook -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+              <i class="bi bi-facebook"></i>
+              </a>
+              <!-- Messenger -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+              <i class="bi bi-messenger"></i>
+              </a>
+              <!-- Instagram -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+              <i class="bi bi-instagram"></i>
+              </a>
+              <!-- Whatsapp -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+              <i class="bi bi-whatsapp"></i>
+              </a>
+          </div>
+        </section>
+    
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 mx-auto mb-2">
+                    <!-- Content -->
+                    <h5 class="font-weight-bold mb-4">FUNDACIÓN AYUDA A UN PELUDO</h5>
+                    <p class="text-justify">
+                      Nuestra institución es una fundación sin fines de lucro que partio en redes sociales para poder ayudar a muchos animales que quedan desprotegidos.
+                    </p>
+                    <img src="img/logo_fundacion.jpg" width="60" height="60" alt="">
+                </div>
+                
+                <!-- Grid columna -->
+                <div class="text-center col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 mx-auto my-3">
+                    <!-- Links -->
+                    <h5 class="font-weight-bold mb-4">¿NECESITAS AYUDA?</h5>
+                    <li class="font-weight-light">
+                      <a href="#contactanos">Contacta con nosotros</a>
+                    </li>
+                    <li class="font-weight-light">
+                      <a href="#terminosycondiciones">Términos y condiciones</a>
+                    </li>
+                    <h5 class="font-weight-bold mt-4">¡TE NECESITAMOS!</h5>
+                    <h5 class="font-weight-bold mb-2">SUSCRIBE TU DONACIÓN</h5>
+                      <p>Suscribete y goza de un descuento del 5% en el total de tu compra</p>
+                      <a class="font-weight-bold" href="#">SUSCRIBIRSE!</a>
+
+                </div>
+                
+       
+                <!-- Info pagos -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 mx-auto my-3">
+                    <!-- Links -->
+                    <h5 class="font-weight-bold mb-4">FORMAS DE PAGO</h5>
+                    <img class="mb-2" src="img/img-pagos.jpg" width="80%" alt="">
+                    
+                    
+                    <h5 class="font-weight-bold mt-2"><img src="img/lock-fill.svg"> COMPRA 100% SEGURA</h5>
+                </div>
+                
+              <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+          </div>
+        </section>
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="https://google.com/" target="blank">Grupo 3 Programación Web</a>
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
+</div>
+
+
+
+
+
+
+
+
+      
+    
+    
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/modal-login.js"></script>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  </body>
+</html>
