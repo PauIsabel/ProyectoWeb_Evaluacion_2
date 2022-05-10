@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+    <title>Blog - Detalle</title>
+</head>
+
+<body class="petmark-theme-3">
+    <div class=" site-wrapper ">
+        <header class="header petmark-header-3">
+            <!--Primera barra -->
+            <div class="header-top text-white bg-orange">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <ul class="header-links no-border white-color justify-content-center justify-content-lg-start">
+                                <li><a href="404.html"><i class="fas fa-car-alt"></i>  Rastrea tu Orden</a></li>
+                                <li><a href="login-register.html"><i class="fas fa-user"></i>  Regístrese o inicie sesión</a></li>
+                                <li><a href="404.html"><i class="fas fa-user"></i>  Mi Cuenta</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--FIN Primera barra -->
+            <!--Inicio Segunda barra-->
+            <div class="header-middle bg-primary">
+                <div class="header-nav-wrapper">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-3 col-lg-3 col-sm-4 order-lg-1 order-md-1">
+                                <div class="site-brand  text-center text-lg-left">
+                                    <a href="index.html" class="brand-image"><img src="image/main-logo--green.png" alt=""></a>
+                                </div>
+                            </div>
+                            <!--Categoria con Buscador -->
+                            <div class="col-xl-7 col-lg-6 col-md-12 order-lg-2 order-sm-3">
+                                <form class="category-widget"><input type="text" name="search" placeholder="Buscar productos ">
+                                    <div class="search-form__group search-form__group--select">
+                                        <select name="category " id="searchCategory" class="search-form__select nice-select">
+                                        <option value="all">Todas las categorias</option>
+                                        <optgroup label="Comodidad">
+                                            <option>Juguetes</option>
+                                            <option>Rascadores</option>
+                                            <option>Camas</option>
+                                        </optgroup>
+                                        <optgroup label="Alimentos">
+                                            <option>Alimento Perros</option>
+                                            <option>Alimento Gatos</option>
+                                            <option>Alimento Kanguros</option>
+                                        </optgroup>
+                                        <optgroup label="Mascotas">
+                                            <option>Perros</option>
+                                            <option>Gatos</option>
+                                            <option>Pajaritos</option>
+                                            <option value="3">Reptiles</option>
+                                        </optgroup>
+                                        <option value="3">Limpieza</option>
+                                        <option value="3">Deporte</option>
+                                    </select>
+                                    </div>
+                                    <button class="search-submit"><i class="fas fa-search"></i></button>
+                                </form>
+                            </div>
+                            <!-- Bloque de Carro de compras-->
+                            <div class="col-xl-2 col-lg-3 col-sm-8 order-lg-3 order-sm-2">
+                                <div class="cart-widget-wrapper slide-down-wrapper">
+                                    <div class="cart-widget border-0 white-color slide-down--btn">
+                                        <div class="cart-icon"><i class="ion-bag">
+                                        <!-- Indica el numero de articulos agregados al carro-->  
+                                        </i><span class="cart-count-badge">1</span>
+                                        </div>
+                                        <!-- Indica el peso y el total en dinero del carro-->
+                                        <div class="cart-text">
+                                            <span class="d-block">Tú Carro</span>
+                                            <strong>
+                                                <span class="amount">
+                                                <span class="currencySymbol">$</span>90.000</span>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                    <!--Muestra los item del carro-->
+                                    <div class="slide-down--item ">
+                                        <div class="cart-widget-box">
+                                            <ul class="cart-items">
+                                                <li class="single-cart">
+                                                    <a href="#" class="cart-product">
+                                                        <div class="cart-product-img"><img src="image/product/cart-product.jpg" alt="Selected Products"></div>
+                                                        <div class="product-details">
+                                                            <h4 class="product-details--title">Alimento de Gato NEKO</h4>
+                                                            <span class="product-details--price">1 x $90.000</span>
+                                                        </div><span class="cart-cross">x</span></a>
+                                                </li>
+                                                <li class="single-cart">
+                                                    <div class="cart-product__subtotal"><span class="subtotal--title">Subtotal</span><span class="subtotal--price">$90.000</span></div>
+                                                </li>
+                                                <li class="single-cart">
+                                                    <div class="cart-buttons"><a href="cart.html" class="btn btn-outlined">Ver Carro</a><a href="checkout.html" class="btn btn-outlined">Pagar</a></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Termina el Carro-->
+
+            <!--Muestra los item del carro-->
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Main Menu -->
+                        <div class="col-lg-8 col-xl-9 col-md-6 order-md-2 order-sm-1 order-2">
+                            <nav class="main-navigation">
+                                <!-- Comienza el Mainmenu -->
+                                <ul class="mainmenu">
+                                    <li class="mainmenu__item "><a href="index.html" class="mainmenu__link">Home</a></li>
+                                    <li class="mainmenu__item "><a href="nosotros.html" class="mainmenu__link">Nosotros</a></li>
+                                    <li class="mainmenu__item "><a href="galeria.html" class="mainmenu__link">Galeria</a></li>
+                                    <li class="mainmenu__item "><a href="blog.html" class="mainmenu__link">Blog</a></li>
+                                    <li class="mainmenu__item "><a href="tienda.html" class="mainmenu__link">Tienda</a></li>
+                                </ul>
+                                <!-- Mainmenu End -->
+                            </nav>
+                        </div>
+
+
+                        <!-- Call Widget -->
+                        <div class="col-lg-4 col-xl-3 col-md-12 col-sm-7 order-sm-2 order-3">
+                            <div class="call-widget">
+                                <p>Llamanos ahora: <br class="d-sm-none"><i class="icon ion-ios-telephone"></i><span class="font-weight-mid">+569 1234 5478</span></p>
+                            </div>
+                        </div>
+
+                        <!--  Mobile Menu -->
+                        <div class="col-12 d-flex d-lg-none order-2 mobile-absolute-menu">
+                            <!-- Main Mobile Menu Start -->
+                            <div class="mobile-menu"></div>
+                            <!-- Main Mobile Menu End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav aria-label="breadcrumb " class="breadcrumb-wrapper ">
+            <div class="container ">
+                <ol class="breadcrumb ">
+                    <li class="breadcrumb-item "><a href="index.html ">Home</a></li>
+                    <li class="breadcrumb-item active " aria-current="page ">Blog Detalle</li>
+                </ol>
+            </div>
+        </nav>
+        <section class="blog-page-section with-sidebar ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-8 col-xl-9 mb--60 ">
+                        <div class="blog-post post-details left-slide-margin ">
+                            <div class="blog-post post-details single-block ">
+                                <div class="blog-image-gallery petmark-slick-slider " data-slick-setting='{  "autoplay ": true,"autoplaySpeed": 3000,"slidesToShow ": 1,"arrows ": true }'><img src="image/others/blog-slider-1.jpg " alt=" "><img src="image/others/blog-slider-2.jpg " alt=" "><img src="image/others/blog-slider-3.jpg " alt=" "></div>
+                                <div class="blog-content mt--30 ">
+                                    <header>
+                                        <div class="post-category text-primary "><i class="fas fa-folder "></i><a href="# ">Wordpress</a>, <a href="# ">Medicina</a></div>
+                                        <h3 class="blog-title "><a href="blog-detalle.html ">Blog image post </a></h3>
+                                        <div class="post-meta "><span class="post-author "><i class="fas fa-user "></i><span class="text-gray ">Posteado por : </span> administrador</span><span class="post-separator ">|</span><span class="post-date "><i class="far fa-calendar-alt "></i><span class="text-gray ">On : </span>                                            10 de Marzo, 2022</span>
+                                        </div>
+                                    </header>
+                                    <article>
+                                        <h3 class="d-none sr-only ">articulo</h3>
+                                        <p class="p-0 ">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ac ante egestas hendrerit. Aliquam et metus pharetra, bibendum
+                                            massa nec, fermentum odio. Nunc id leo ultrices, mollis ligula in, finibus tortor. Mauris eu dui ut lectus fermentum eleifend. Pellentesque faucibus sem ante, non malesuada odio varius nec. Suspendisse potenti.</p>
+                                        <blockquote>
+                                            <p>Quisque semper nunc vitae erat pellentesque, ac placerat arcu consectetur. In venenatis elit ac ultrices convallis. Duis est nisi, tincidunt ac urna sed, cursus blandit lectus. In ullamcorper sit amet ligula
+                                                ut eleifend. Proin dictum tempor ligula, ac feugiat metus. Sed finibus tortor eu scelerisque scelerisque.</p>
+                                        </blockquote>
+                                        <p>Aenean et tempor eros, vitae sollicitudin velit. Etiam varius enim nec quam tempor, sed efficitur ex ultrices. Phasellus pretium est vel dui vestibulum condimentum. Aenean nec suscipit nibh. Phasellus nec lacus
+                                            id arcu facilisis elementum. Curabitur lobortis, elit ut elementum congue, erat ex bibendum odio, nec iaculis lacus sem non lorem. Duis suscipit metus ante, sed convallis quam posuere quis. Ut tincidunt eleifend
+                                            odio, ac fringilla mi vehicula nec. Nunc vitae lacus eget lectus imperdiet tempus sed in dui. Nam molestie magna at risus consectetur, placerat suscipit justo dignissim. Sed vitae fringilla enim, nec ullamcorper
+                                            arcu.
+                                        </p>
+                                        <p>Suspendisse turpis ipsum, tempus in nulla eu, posuere pharetra nibh. In dignissim vitae lorem non mollis. Praesent pretium tellus in tortor viverra condimentum. Nullam dignissim facilisis nisl, accumsan placerat
+                                            justo ultricies vel. Vivamus finibus mi a neque pretium, ut convallis dui lacinia. Morbi a rutrum velit. Curabitur sagittis quam quis consectetur mattis. Aenean sit amet quam vel turpis interdum sagittis et
+                                            eget neque. Nunc ante quam, luctus et neque a, interdum iaculis metus. Aliquam vel ante mattis, placerat orci id, vehicula quam. Suspendisse quis eros cursus, viverra urna sed, commodo mauris. Cras diam arcu,
+                                            fringilla a sem condimentum, viverra facilisis nunc. Curabitur vitae orci id nulla maximus maximus. Nunc pulvinar sollicitudin molestie.</p>
+                                    </article>
+                                    <footer class="blog-meta ">
+                                        <div><a href="# ">3 comentarios </a>/ TAGS: <a href="# ">medicina</a>, <a href="# ">gatos</a>, <a href="# ">abandonados</a></div>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class="share-block single-block ">
+                                <h3>Compartir ahora</h3>
+                                <div class="social-links justify-content-center mt--10 "><a href="# " class="single-social social-rounded "><i class="fab fa-facebook-f "></i></a><a href="# " class="single-social social-rounded "><i class="fab fa-twitter "></i></a>
+                                    <a href="# " class="single-social social-rounded "><i class="fab fa-pinterest-p "></i></a><a href="# " class="single-social social-rounded "><i class="fab fa-google-plus-g "></i></a>
+                                    <a href="# " class="single-social social-rounded "><i class="fab fa-linkedin-in "></i></a>
+                                </div>
+                            </div>
+                            <div class="related-post-block single-block ">
+                                <h3>Publicación relacionada</h3>
+                                <div class="row ">
+                                    <div class="col-md-4 mt--30 ">
+                                        <div class="related-post ">
+                                            <div class="image "><img src="image/others/blog-related-1.jpg " alt=" "></div>
+                                            <div class="content ">
+                                                <h4 class="post-date ">16 de Diciembre. 2018</h4>
+                                                <h2 class="post-title "><a href="blog-detalle.html ">Posteado con imagen</a></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt--30 ">
+                                        <div class="related-post ">
+                                            <div class="image "><img src="image/others/blog-related-2.jpg " alt=" "></div>
+                                            <div class="content ">
+                                                <h4 class="post-date ">02 de Agosto. 2019</h4>
+                                                <h2 class="post-title "><a href="blog-details-video.html ">Posteado con imagen</a></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt--30 ">
+                                        <div class="related-post ">
+                                            <div class="image "><img src="image/others/blog-related-3.jpg " alt=" "></div>
+                                            <div class="content ">
+                                                <h4 class="post-date ">25 de Enero. 2021</h4>
+                                                <h2 class="post-title "><a href="blog-details-audio.html ">Posteado con imagen</a></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 ">
+                        <div class="sidebar-widget ">
+                            <div class="single-sidebar ">
+                                <h2 class="sidebar-title ">Buscar</h2>
+                                <div class="site-mini-search "><input type="text " placeholder="Buscar "><button><i class="fas fa-search "></i></button></div>
+                            </div>
+                            <div class="single-sidebar ">
+                                <h2 class="sidebar-title ">ARCHIVOS DEL BLOG</h2>
+                                <ul class="sidebar-list ">
+                                    <li><a href="# ">Marzo 2018 (1)</a></li>
+                                    <li><a href="# ">December 2019 (3)</a></li>
+                                    <li><a href="# ">November 2020 (4)</a></li>
+                                    <li><a href="# ">September 2021 (1)</a></li>
+                                    <li><a href="# ">Enero 2022 (1)</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-sidebar ">
+                                <h2 class="sidebar-title ">POST RECIENTES</h2>
+                                <ul class="sidebar-list ">
+                                    <li><a href="# ">Blog ayuda a un Perrito</a></li>
+                                    <li><a href="# ">Blog ayuda a un Gatito</a></li>
+                                    <li><a href="# ">Blog ayuda a un Ave</a></li>
+                                    <li><a href="# ">Blog ayuda a un Conejo</a></li>
+                                    <li><a href="# ">Blog nuestra Tienda</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-sidebar ">
+                                <a class="promo-image overflow-image "><img src="image/product/slidebar-promo-product.jpg " alt=" "></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="site-footer ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-5 col-md-6 ">
+                        <div class="single-footer contact-block ">
+                            <h3 class="footer-title ">FUNDACIÓN</h3>
+                            <div class="single-footer-content ">
+                                <p class="text-italic ">Nuestra institución es una fundación sin fines de lucro que partio en redes sociales para poder ayudar a muchos animales que quedan desprotegidos.</p>
+                                <p class="font-weight-500 text-white "><span class="d-block ">Información Contacto:</span> Rojas Magallanes 5600, La Florida.</p>
+                                <p class="social-icons "><a href=" "><i class="fab fa-facebook-f "></i></a><a href=" "><i class="fab fa-twitter "></i></a><a href=" "><i class="fab fa-instagram "></i></a><a href=" "><i class="fab fa-linkedin-in
+    "></i></a><a href=" "><i class="fas fa-rss "></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 ">
+                        <div class="single-footer contact-block ">
+                            <h3 class="footer-title ">¿Necesitas Ayuda?</h3>
+                            <div class="single-footer-content ">
+                                <ul class="footer-list ">
+                                    <li><a href="# ">Nosotros</a></li>
+                                    <li><a href="# ">Contáctanos</a></li>
+                                    <li><a href="# ">Mis ordenes</a></li>
+                                    <li><a href="# ">Terminos y condiciones</a></li>
+                                    <li><a href="# ">Envío y Entrega</a></li>
+                                    <li><a href="# ">Politicas de Privacidad</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 ">
+                        <div class="single-footer contact-block ">
+                            <h3 class="footer-title ">SUSCRÍBETE A NUESTRO BOLETÍN</h3>
+                            <div class="single-footer-content ">
+                                <p> Suscríbase al correo de Petmark para recibir actualizaciones sobre novedades, ofertas especiales y otra información sobre descuentos.</p>
+                                <div class="pt-2 ">
+                                    <div class="input-box-with-icon "><input type="text " placeholder="Ingresa tú correo "><button><i class="fas fa-envelope "></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-block-2 text-center ">
+                    <p>METODOS DE PAGO ACEPTADOS</p>
+                    <div class="payment-block pt-3 "><img src="image/icon-logo/payment-icons.png " alt=" "></div>
+                </div>
+            </div>
+            <div class="footer-copyright ">
+                <p>Copyright © 2022 <a href="http://www.google.com/ " title="google ">Aprendizaje Grupo 3</a>. All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/plugins.js "></script>
+    <script src="js/ajax-mail.js "></script>
+    <script src="js/custom.js "></script>
+</body>
+
+</html>
